@@ -1,10 +1,11 @@
 const airbnbBaseStyleRules = require('eslint-config-airbnb-base/rules/style').rules;
 const airbnbBaseVariablesRules = require('eslint-config-airbnb-base/rules/variables').rules;
+const spellCheckerOptions = require('./spellCheckerOptions');
 
 module.exports = {
   extends: ['airbnb'],
   parser: '@typescript-eslint/parser',
-  plugins: ['@typescript-eslint'],
+  plugins: ['@typescript-eslint', 'spellcheck'],
   settings: {
     'import/resolver': {
       node: {
@@ -22,6 +23,7 @@ module.exports = {
     jest: true,
   },
   rules: {
+    'spellcheck/spell-checker': ['warn', spellCheckerOptions],
     'react/jsx-filename-extension': [1, { extensions: ['.jsx', '.tsx'] }],
     complexity: ['error', { max: 10 }],
     'max-lines': ['error', { max: 100, skipBlankLines: true, skipComments: true }],

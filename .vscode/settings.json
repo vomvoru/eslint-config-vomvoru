@@ -1,0 +1,13 @@
+{
+  // prettier-eslint 를 위한 설정
+  "prettier.eslintIntegration": true,
+  "editor.formatOnSave": true,
+  "eslint.autoFixOnSave": false,
+
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ]
+}
