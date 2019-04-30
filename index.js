@@ -60,19 +60,7 @@ module.exports = {
         indent: 'off',
         '@typescript-eslint/indent': airbnbBaseStyleRules.indent,
         '@typescript-eslint/interface-name-prefix': ['error', 'never'],
-        '@typescript-eslint/member-delimiter-style': [
-          'error',
-          {
-            multiline: {
-              delimiter: 'none',
-              requireLast: false,
-            },
-            singleline: {
-              delimiter: 'none',
-              requireLast: false,
-            },
-          },
-        ],
+        '@typescript-eslint/member-delimiter-style': 'error',
         '@typescript-eslint/member-naming': 'off',
         '@typescript-eslint/member-ordering': 'error',
         '@typescript-eslint/no-angle-bracket-type-assertion': 'error',
